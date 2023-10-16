@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="h1Tag">Speed necessary to orbit the earth: </h1>
+
+        <form onsubmit="event.preventDefault()" class="formTag">
+
+            <label for="height">Height in km:</label><br>
+            <input type="text" id="height" name="height"><br>
+
+            <div class="btnDiv">
+                <input type="submit" value="Calculate" id="submitButton"  onclick="main()">   
+            </div>
+
+            <div class="outputDiv">
+                <label id="output"></label>
+            </div>           
+            
+        </form> 
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
